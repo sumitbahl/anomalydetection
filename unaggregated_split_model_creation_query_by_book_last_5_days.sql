@@ -25,3 +25,5 @@ train_data AS (
 )
 SELECT *
 FROM train_data;
+
+-- In forecast, we ould potentially add: WHERE EXTRACT(DAYOFWEEK FROM forecast_timestamp) NOT IN (1,7)  -- 1=Sunday, 7=Saturday 
